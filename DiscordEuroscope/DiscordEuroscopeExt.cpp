@@ -144,19 +144,12 @@ VOID CALLBACK DiscordTimer(_In_ HWND hwnd, _In_ UINT uMsg, _In_ UINT_PTR idEvent
 int DiscordEuroscopeExt::CountACinRange()
 {
 	int count = 0;
-#ifdef EUROSCOPE31D
-	EuroScopePlugIn::CAircraft ac = AircraftSelectFirst();
-#else
 	EuroScopePlugIn::CRadarTarget ac = RadarTargetSelectFirst();
-#endif
+
 	while (ac.IsValid())
 	{
 		count++;
-#ifdef EUROSCOPE31D
-		ac = AircraftSelectNext(ac);
-#else
 		ac = RadarTargetSelectNext(ac);
-#endif
 	}
 	return count;
 }
@@ -164,28 +157,17 @@ int DiscordEuroscopeExt::CountACinRange()
 int DiscordEuroscopeExt::CountTrackedAC()
 {
 	int count = 0;
-#ifdef EUROSCOPE31D
-	EuroScopePlugIn::CAircraft ac = AircraftSelectFirst();
-#else
 	EuroScopePlugIn::CRadarTarget ac = RadarTargetSelectFirst();
-#endif
+
 	while (ac.IsValid())
 	{
-#ifdef EUROSCOPE31D
-		if(ac.GetTrackingControllerIsMe() == true)
-#else
 		if (ac.GetCorrelatedFlightPlan().GetTrackingControllerIsMe() == true)
-#endif
 		{
 			count++;
 			if (std::find(inst->tracklist.begin(), inst->tracklist.end(), ac.GetCallsign()) == inst->tracklist.end())
 				inst->tracklist.push_back(ac.GetCallsign());
 		}
-#ifdef EUROSCOPE31D
-		ac = AircraftSelectNext(ac);
-#else
 		ac = RadarTargetSelectNext(ac);
-#endif
 	}
 	return count;
 }
