@@ -1,1 +1,0 @@
-# DiscordEuroscope-for-TRvACC
