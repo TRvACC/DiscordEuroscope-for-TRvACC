@@ -1,8 +1,10 @@
 # DiscordEuroscope for TRvACC
-A plugin written to provide discord rich presence feature for our lovely EuroScope.
+A plugin written to provide discord rich presence feature for EuroScope.
 
 Original code can be found here: https://github.com/Kirollos/DiscordEuroscope
 
-This build is the same plugin with heavily customized version of it for TRvACC.
+This build is the same plugin as above however customized version for TRvACC ATCOs.
 
-**Please** report any bugs in the issues section of this repository.
+**Please** report any bugs using the "Issues" tab of this repository.
+
+To use this code, please contact staff@trvacc.net as it contains TRvACC logo, text and its brand images.
