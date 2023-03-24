@@ -1,9 +1,5 @@
 #pragma once
-#ifdef EUROSCOPE31D
-#include "inc\\3.1d\\EuroScopePlugIn.h"
-#else
 #include "inc\\3.2\\EuroScopePlugIn.h"
-#endif
 #include "inc\\discord_rpc.h"
 #include <vector>
 #include <map>

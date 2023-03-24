@@ -2,7 +2,7 @@
 #include "DiscordEuroscopeExt.h"
 
 
-DiscordEuroscopeExt::DiscordEuroscopeExt() : EuroScopePlugIn::CPlugIn(EuroScopePlugIn::COMPATIBILITY_CODE, "Discord Euroscope for TRvACC", "1.2.0", "Alp Deniz Senyurt", "https://github.com/Kirollos/DiscordEuroscope")
+DiscordEuroscopeExt::DiscordEuroscopeExt() : EuroScopePlugIn::CPlugIn(EuroScopePlugIn::COMPATIBILITY_CODE, "Discord Euroscope for TRvACC", "1.2.1.0", "Alp Deniz Senyurt", "https://github.com/TRvACC/DiscordEuroscope-for-TRvACC")
 {
 	DiscordEventHandlers handlers;
 	memset(&handlers, 0, sizeof(handlers));
@@ -63,7 +63,7 @@ DiscordEuroscopeExt::DiscordEuroscopeExt() : EuroScopePlugIn::CPlugIn(EuroScopeP
 	{
 		DisplayUserMessage("Message", "DiscordEuroscope", "If you haven't configured this properly, make sure you are writing to", true, true, false, true, false);
 		DisplayUserMessage("Message", "DiscordEuroscope", "DiscordEuroscope_RadioCallsigns.txt, Each line holds a callsign", true, true, false, true, false);
-		DisplayUserMessage("Message", "DiscordEuroscope", "Example: HECC_CTR Cairo Control", true, true, false, true, false);
+		DisplayUserMessage("Message", "DiscordEuroscope", "Example: LTAA_CTR Ankara Control", true, true, false, true, false);
 	}
 	delete dmsg;
 #endif
