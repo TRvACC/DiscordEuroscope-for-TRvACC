@@ -63,7 +63,7 @@ DiscordEuroscopeExt::DiscordEuroscopeExt() : EuroScopePlugIn::CPlugIn(EuroScopeP
 	{
 		DisplayUserMessage("Message", "DiscordEuroscope", "If you haven't configured this properly, make sure you are writing to", true, true, false, true, false);
 		DisplayUserMessage("Message", "DiscordEuroscope", "DiscordEuroscope_RadioCallsigns.txt, Each line holds a callsign", true, true, false, true, false);
-		DisplayUserMessage("Message", "DiscordEuroscope", "Example: LTAA_CTR Ankara Control", true, true, false, true, false);
+		DisplayUserMessage("Message", "DiscordEuroscope", "Example: ANK_CTR Ankara Control", true, true, false, true, false);
 	}
 	delete dmsg;
 #endif
